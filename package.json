@@ -1,0 +1,60 @@
+{
+  "name": "pandapi",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "account": "yarn hardhat:account",
+    "account:generate": "yarn workspace @pandapi/hardhat account:generate",
+    "account:import": "yarn workspace @pandapi/hardhat account:import",
+    "account:reveal-pk": "yarn workspace @pandapi/hardhat account:reveal-pk",
+    "chain": "yarn hardhat:chain",
+    "compile": "yarn hardhat:compile",
+    "deploy": "yarn hardhat:deploy",
+    "fork": "yarn hardhat:fork",
+    "format": "yarn next:format && yarn hardhat:format",
+    "generate": "yarn account:generate",
+    "hardhat:account": "yarn workspace @pandapi/hardhat account",
+    "hardhat:chain": "yarn workspace @pandapi/hardhat chain",
+    "hardhat:check-types": "yarn workspace @pandapi/hardhat check-types",
+    "hardhat:clean": "yarn workspace @pandapi/hardhat clean",
+    "hardhat:compile": "yarn workspace @pandapi/hardhat compile",
+    "hardhat:deploy": "yarn workspace @pandapi/hardhat deploy",
+    "hardhat:flatten": "yarn workspace @pandapi/hardhat flatten",
+    "hardhat:fork": "yarn workspace @pandapi/hardhat fork",
+    "hardhat:format": "yarn workspace @pandapi/hardhat format",
+    "hardhat:generate": "yarn workspace @pandapi/hardhat generate",
+    "hardhat:hardhat-verify": "yarn workspace @pandapi/hardhat hardhat-verify",
+    "hardhat:lint": "yarn workspace @pandapi/hardhat lint",
+    "hardhat:lint-staged": "yarn workspace @pandapi/hardhat lint-staged",
+    "hardhat:test": "yarn workspace @pandapi/hardhat test",
+    "hardhat:verify": "yarn workspace @pandapi/hardhat verify",
+    "postinstall": "husky install",
+    "ipfs": "yarn workspace @pandapi/nextjs ipfs",
+    "lint": "yarn next:lint && yarn hardhat:lint",
+    "next:build": "yarn workspace @pandapi/nextjs build",
+    "next:check-types": "yarn workspace @pandapi/nextjs check-types",
+    "next:format": "yarn workspace @pandapi/nextjs format",
+    "next:lint": "yarn workspace @pandapi/nextjs lint",
+    "next:serve": "yarn workspace @pandapi/nextjs serve",
+    "precommit": "lint-staged",
+    "start": "yarn workspace @pandapi/nextjs dev",
+    "test": "yarn hardhat:test",
+    "vercel": "yarn workspace @pandapi/nextjs vercel",
+    "vercel:login": "yarn workspace @pandapi/nextjs vercel:login",
+    "vercel:yolo": "yarn workspace @pandapi/nextjs vercel:yolo",
+    "verify": "yarn hardhat:verify"
+  },
+  "devDependencies": {
+    "husky": "~9.1.6",
+    "lint-staged": "~13.2.2"
+  },
+  "packageManager": "yarn@3.2.3",
+  "engines": {
+    "node": ">=20.18.3"
+  }
+}
